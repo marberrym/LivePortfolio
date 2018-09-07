@@ -1,0 +1,261 @@
+.modalIMG {
+    height: 60%;
+    width: 100%;
+    border-radius: 1em;
+}
+ 
+.modalFlex {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.modalFlexC {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
+    margin-top: 2.5em;
+}
+
+.modalDescription {
+    flex-basis: 90%;
+    margin: 1em;
+    padding: 1em;
+}
+
+.modalWindow {
+    opacity: 0;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-color: rgb(0, 0, 0, .6);
+    transition: all .5s ease-in-out;
+}
+
+.modalBox {
+    opacity: 0;
+    left: 5%;
+    top: 10%;
+    transform: translateY(-100%);
+    position: absolute;
+    pointer-events: none;
+    height: 80%;
+    width: 90%;
+    background: radial-gradient(circle, rgba(177,176,179,1) 20%, rgba(237,229,241,1) 100%);
+    border-radius: 1em;
+    transition: .5s ease-in-out;
+}
+
+.graphicModal {
+    opacity: 0;
+    left: 5%;
+    bottom: -2%;
+    transform: translateY(100%);
+    position: absolute;
+    pointer-events: none;
+    height: 75%;
+    width: 90%;
+    background: radial-gradient(circle, rgba(177,176,179,1) 20%, rgba(237,229,241,1) 100%);
+    border-radius: 1em;
+    transition: .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphicImage {
+    height: 10em;
+    width: 10em;
+    margin-top: 2em;
+}
+
+.hga {
+    height: 10em;
+    width: 20em;
+    margin: 1em;
+    margin-bottom: .3em;
+}
+
+.showModal {
+    transform: translateX(0);
+    pointer-events: all;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scrollRight {
+    transform: translateX(100%);
+}
+
+.scrollLeft {
+    transform: translateX(-100%);
+}
+
+.closeX {
+    margin: .5em;
+    margin-bottom: 0;
+    opacity: .3;
+    width: 10%;
+    top: 0;
+    position: absolute;
+    left: 85%;
+}
+
+.closeX:hover {
+    opacity: .6;
+}
+
+.leftArw {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    transform: scale(.7);
+    color: whitesmoke;
+    opacity: .8;
+    z-index: 4;
+    transition: .3s ease-in-out;
+}
+
+.leftArw:hover {
+    color: rgb(4, 107, 133);
+    transform: scale(.9);
+    opacity: 1;
+}
+
+.rightArw {
+    position: fixed;
+    top: 100%;
+    right: 25%;
+    transform: scale(.7);
+    color: whitesmoke;
+    opacity: .8;
+    z-index: 4;
+    transition: .3s ease-in-out;
+}
+
+.hideArrow {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.rightArw:hover {
+    color: rgba(4, 107, 133);
+    transform: scale(.9);
+    opacity: 1;
+}
+
+
+
+.outlineBlack {
+    text-shadow: 1px 1px 0 #000,
+        -1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000,
+        0px 1px 0 #000,
+        0px -1px 0 #000,
+        -1px 0px 0 #000,
+        1px 0px 0 #000,
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000,
+        0px 2px 0 #000,
+        0px -2px 0 #000,
+        -2px 0px 0 #000,
+        2px 0px 0 #000,
+        1px 2px 0 #000,
+        -1px 2px 0 #000,
+        1px -2px 0 #000,
+        -1px -2px 0 #000,
+        2px 1px 0 #000,
+        -2px 1px 0 #000,
+        2px -1px 0 #000,
+        -2px -1px 0 #000;
+}
+
+
+@media only screen and (min-width: 500px) {
+    .modalBox {
+        left: 10%;
+        top: 20%;
+        width: 80%;
+        height: 70%;
+    }
+    .graphicModal {
+        left: 10%;
+        width: 80%;
+    }
+    .graphicImage {
+        height: 12em;
+        width: 12em;
+    }
+    .hga {
+        height: 12em;
+        width: 24em;
+    }
+    .closeX {
+        left: 87%;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .modalBox {
+        left: 15%;
+        top: 15%;
+        width: 70%; 
+    }
+    .graphicModal {
+        left: 15%;
+        width: 70%;
+        height: 65%;
+    }
+    .graphicImage {
+        height: 15em;
+        width: 15em;
+    }
+    .hga {
+        height: 15em;
+        width: 30em;
+    }
+    .modalIMG {
+        height: 70%;
+    }
+    .closeX {
+        left: 89%;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .graphicImage {
+        height: 16em;
+        width: 16em;
+    }
+    .modalFlex {
+        flex-wrap: nowrap;
+    }
+    .modalFlexC {
+        flex-basis: 45%;
+        margin: 1em;
+    }
+    .modalDescription {
+        flex-basis: 45%;
+    }
+    .closeX {
+        left: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+ 
+    
+}

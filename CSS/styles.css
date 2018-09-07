@@ -1,0 +1,270 @@
+html body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+    background: radial-gradient(circle, rgba(177,176,179,1) 20%, rgba(237,229,241,1) 100%);
+}
+
+.pageOne {
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+.animePanel {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.flexColumn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexColumnMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2em;
+    padding-right: 2em;
+    align-items: center;
+    flex-shrink: 1;
+    z-index: 1;
+    flex-basis: 95%;
+}
+
+.flexRSide {
+    display: flex;
+    flex-basis: 17%;
+    align-items: center;
+}
+
+.flexColumnSide {
+    display: none;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 35%;
+}
+.projectItem {
+    background-color: blue; 
+    margin: 2em;
+    height: 12em;
+    width: 8em;
+    border-radius: 1em;
+    flex-basis: 70%;
+}
+
+.projectItem:hover {
+    opacity: .6;
+}
+
+.projectPage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newPage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.basis25 {
+    flex-basis: 25%;
+}
+
+.aboutIcon{
+    padding: .05em;
+    transform: scale(.8);
+    transition: .3s ease-in-out;
+    opacity: .7;
+
+}
+.aboutIcon:hover{
+    opacity: 1;
+    color: rgba(2, 6, 216);
+    z-index: 1;
+    position: relative;
+    border-radius: .2em;
+    transform: scale(1.2);
+}
+
+.column{
+    flex-direction: column;
+}
+.justifyEnd {
+    justify-content: flex-end;
+}
+.justifyCenter {
+    justify-content: center;
+}
+.alignEnd {
+    align-items: flex-end;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.alignStart {
+    align-items: flex-start;
+}
+
+.basis13 {
+    flex-basis: 13%;
+}
+.basis100 {
+    flex-basis: 100%;
+}
+
+.fontSize15 {
+    font-size: 1.5em;
+}
+
+.flex {
+    display: flex;
+}
+
+.reliableText {
+    font-family: 'Oleo Script Swash Caps', cursive; 
+    font-size: 2em; 
+    line-height: 1.5em;
+}
+.lineH90 {
+    line-height: 90%;
+}
+
+.basis30 {
+    flex-basis: 30%;
+}
+
+.marginTop2 {
+    margin-top: 2em;
+}
+
+.marginTop1 {
+    margin-top:1em;
+}
+
+.flexWrap {
+    flex-wrap: wrap;
+}
+
+.iconLabel {
+    font-family: 'Oswald', sans-serif;
+    font-size: .5em;
+    display: none;
+}
+
+.iconLabel:hover {
+    display: block;
+    z-index: 1;
+}
+
+.pageHead {
+    margin-top: 15%;
+    margin-bottom: 0;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+}
+
+.basis45 {
+    flex-basis: 65%;
+}
+
+#skillsFlex {
+    flex-direction: row;
+}
+/* Responsiveness */
+
+#LeftColumn {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    order: 2;
+    margin-top: 1.5em;
+}
+
+.gdImg {
+    width: 10%;
+    height: 10%;
+}
+
+#aboutContent {
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 500px) {
+    .projectItem {
+        flex-basis: 45%;
+        height: 13em;
+    }
+    #aboutContent {
+        flex-direction: row
+    }
+    .pageHead {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .animePanel {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #LeftColumn {
+        display: flex;
+        flex-basis: 45%;
+        order: 0;
+        align-items: flex-end;
+        margin-top: 0;
+    }
+    .projectItem {
+        flex-basis: 40%;
+        height: 15em;
+        width: 15em;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    #LeftColumn {
+        flex-basis: 30%;
+    }
+    #RightColumn {
+        display: flex;
+    }
+    .projectItem {
+        flex-basis: 35%;
+        height: 20em;
+        width: 20em;
+    }
+    .pageHead {
+        margin-top: 5%;
+    }
+    
+}
+@media only screen and (min-width: 1200px) {
+    .projectItem {
+        flex-basis: 30%;
+        height: 20em;
+        width: 20em;
+    }
+}
+
+
+
