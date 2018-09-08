@@ -244,6 +244,11 @@ html body {
 .gdImg {
     width: 10%;
     height: 10%;
+    transition: .2s ease-in-out;
+}
+
+.gdImg:hover {
+    transform: scale(1.2) translateY(-10%);
 }
 
 #aboutContent {
