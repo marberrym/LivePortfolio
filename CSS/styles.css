@@ -194,7 +194,7 @@ html body {
     text-decoration: none;
 }
 
-.resumeBTN {
+.RBTN {
     padding: .5em;
     padding-left: 2em;
     padding-right: 2em;
@@ -212,15 +212,15 @@ html body {
         1px 1px 0 black;
     cursor: pointer;
 }
-.resumeBTN:active {
+.RBTN:active {
     box-shadow: none;
     outline: 0;
 }
-.resumeBTN:focus {
+.RBTN:focus {
     box-shadow: none;
     outline: 0;
 }
-.resumeBTN:hover {
+.RBTN:hover {
     transform: scale(1.1);
 }
 
