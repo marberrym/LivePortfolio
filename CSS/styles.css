@@ -9,9 +9,28 @@ html body {
     background: radial-gradient(circle, rgba(177,176,179,1) 20%, rgba(237,229,241,1) 100%);
 }
 
+.headProfilePic {
+    height: 18.5em; 
+    border-radius: 180px;
+}
+
+.headIcons {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: .5em;
+}
+
 .pageOne {
     height: 100%;
     padding-top: 5%;
+}
+
+.aboutImg {
+    width: 90%; 
+    padding: 1em; 
+    flex-basis: 30%; 
+    border-radius: 2em;
 }
 
 .animePanel {
@@ -186,8 +205,20 @@ html body {
         1px -1px 0 whitesmoke,
         -1px 1px 0 whitesmoke,
         1px 1px 0 whitesmoke;
-
 }
+
+.subHead {
+    font-size: 1.2em;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    margin-bottom: 1.5em; 
+    text-shadow:
+        -1px -1px 0 whitesmoke,
+        1px -1px 0 whitesmoke,
+        -1px 1px 0 whitesmoke,
+        1px 1px 0 whitesmoke;
+}
+
+
 
 .links {
     color: black;
