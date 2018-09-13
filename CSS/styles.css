@@ -190,6 +190,10 @@ html body {
     
 }
 
+.bottom {
+    margin-bottom: 2em;
+}
+
 .pageHead {
     margin-top: 15%;
     margin-bottom: 0;
