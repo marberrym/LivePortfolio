@@ -106,7 +106,7 @@ projects.forEach(function(project) {
             projectOne.classList.add('showModal');     
         } else if (projectName === 'images/hiddengem.png') {
             projectTwo.classList.add('showModal'); 
-        } else if (projectName === 'images/Flutter.jpg') {
+        } else if (projectName === 'images/DGSS.png') {
             projectThree.classList.add('showModal');
         } else if (projectName === 'images/MillionsKnives.png') {
             projectFour.classList.add('showModal');
