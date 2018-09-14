@@ -28,9 +28,10 @@ html body {
 
 .aboutImg {
     width: 90%; 
-    padding: 1em; 
     flex-basis: 30%; 
     border-radius: 2em;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.678);
+    border: 1px solid black;
 }
 
 .animePanel {
@@ -77,11 +78,17 @@ html body {
     height: 12em;
     width: 8em;
     border-radius: 1em;
+    opacity: .7;
     flex-basis: 70%;
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px;
+    transition: .2s ease-in-out;
 }
 
 .projectItem:hover {
-    opacity: .6;
+    transform: scale(1.02);
+    opacity: 1;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.678);
 }
 
 .projectPage {
@@ -241,6 +248,8 @@ html body {
         -1px 1px 0 black,
         1px 1px 0 black;
     cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.678);
+    border: 1px solid black;
 }
 .RBTN:active {
     box-shadow: none;
@@ -252,6 +261,7 @@ html body {
 }
 .RBTN:hover {
     transform: scale(1.1);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.678);
 }
 
 .basis45 {
@@ -353,6 +363,8 @@ html body {
     background-color: rgba(245, 245, 245, 0.741);
     margin: .5em;
     border-radius: .5em;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.678);
+    border: 1px solid black;
 }
 
 .mainIcons {
@@ -363,6 +375,8 @@ html body {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: .5em;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.678);
+    border: 1px solid black;
 }
 
 
