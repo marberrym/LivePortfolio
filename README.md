@@ -1,5 +1,9 @@
-# <div align="center">My Portfolio Site</div>
-###  A journey into selling myself online.
+# <div align="center">**My Portfolio Site**</div>
+###  <div align="center">**A journey into selling myself online.**</div>
+### [My Live Portfolio][1]
+
+#### Table of Contents
+   
 This portfolio has been a very interesting project for me to work on.  It has been an opportunity for me to both showcase my skills and also build my online presence and identity.  When building this website I had two main components I wanted to focus on:
 
 ###### 1.  Portfolio Landing Page
@@ -14,3 +18,5 @@ This portfolio has been a very interesting project for me to work on.  It has be
      * Projects - A place where I can showcase current projects I am working on, both inside and outside of tech.
      * Resume - Another place where I can showcase my resume and recieve feedback on it.
      * About - A page where I could share with others my views behind LHM and why I believe in that cause.
+     
+[1]: https://www.matthew-marberry.com
